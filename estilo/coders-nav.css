@@ -19,10 +19,12 @@ body{
 div.nav{
     display: flex;
     width: 200px;
+    text-align: center;
     margin: auto;
 }
 
-div.nav > a.video{
+div.nav > a.coders{
+    margin-left: 20px;
     color: var(--cor004);
     text-decoration: none;
     font-weight: bold;
@@ -32,25 +34,20 @@ div.nav > a.video{
     transition-duration: 0.4s;
 }
 
-div.nav > a.video::after{
+div.nav > a.coders::after{
     display: block;
     content: '';
-    width: 80px;
+    width: 92px;
     height: 3px;
     background-color: var(--cor002);
 }
 
-div.nav > a.video, a.coders > p{
-    text-align: center;
-}
-
-div.nav > a.video:hover{
+div.nav > a.coders:hover{
     color: white;
     background-image: linear-gradient(to top, #505050, #292929);
 }
 
-div.nav > a.coders{
-    margin-left: 20px;
+div.nav > a.video{
     text-decoration: none;
     font-weight: bold;
     color: white;
@@ -60,7 +57,7 @@ div.nav > a.coders{
     transition-duration: 0.4s;
 }
 
-div.nav > a.coders:hover{
+div.nav > a.video:hover{
     font-size: 1.5em;
     background-image: linear-gradient(to top, #505050, #292929);
 }
