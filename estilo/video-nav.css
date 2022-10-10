@@ -1,0 +1,44 @@
+*{
+    margin: 3px;
+}
+
+body{
+    background-color: #292929;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.nav{
+    display: flex;
+    width: 150px;
+    margin: auto;
+}
+
+div.nav > a{
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    width: 150px;
+    padding: 10px;
+}
+
+div.nav > a:hover{
+    background-color: #999999;
+    border-radius: 3px;
+}
+
+div.nav > a::after:hover{
+    background-color: aqua;
+}
+
+div.underline{
+    width: 150px;
+    height: 5px;
+    content: '';
+    display: block;
+    background-color: red;
+    position: absolute;
+    bottom: 1.5px;
+    border-radius: 3px;
+}
